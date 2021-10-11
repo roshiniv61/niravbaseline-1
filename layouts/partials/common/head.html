@@ -1,0 +1,20 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      {{ .Site.Params.Title }}
+    </title>
+    <meta name="description" content="{{ .Description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{/* styles */}}
+    {{ $options := dict "inlineImports" true }}
+    {{ $styles := resources.Get "css/styles.css" }}
+    {{ $styles = $styles | resources.PostCSS $options }}
+    {{ if hugo.IsProduction }}
+    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"> </script>
+  </head>

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="container mx-auto">
+  {{- partial "common/breadcrumbs.html" . -}}
+</div>
+<div class="container mx-auto  flex flex-wrap">
+{{ $link := .RelPermalink }}
+{{ $all := where (where .Site.Pages "Section" "diebold") ".Params.series" "==" $link }}
+{{ range $all }}
+<div class=" flex items-center w-full px-4 py-6 bg-cover card rounded-none " >
+    <div class="card lg:card-side text-neutral-content rounded-none">
+        <figure class="p-6">
+            <img src="{{.Params.img}}" class="w-56 h-44 rounded-none shadow-lg">
+        </figure> 
+        <div class="max-w-md card-body">
+            <h2 class="card-title text-blue-900">{{.Params.title}}</h2> 
+            <p class="text-justify">{{.Params.short_desc}}</p> 
+            <div class="card-actions">
+              <a href="{{.Params.link}}" >
+                  <button data-theme="dark"
+                  class="btn-sm btn-outline bg-blue-900 border border-blue-900 hover:text-blue-900 hover:bg-white tracking-widest">Browse
+                  Products
+                </button> 
+            </a> 
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+</div>
+{{ end}}

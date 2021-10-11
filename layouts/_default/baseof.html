@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" data-theme="bumblebee">
+{{- partial "common/head.html" . -}}
+<body class="flex flex-col">
+  <div class="h-14 fixed top-0 z-20 w-full bg-white border border-gray-200 shadow-lg">
+    {{- partial "common/header.html" . -}}
+  </div>
+  <div class="min-h-screen">
+    <div class="top-14 h-14">&nbsp;</div>
+    {{ block "main" . }}
+    {{ end}}
+  </div>
+  {{- partial "common/footer.html" . -}}
+</body>
+{{- partial "common/footer-scripts.html" . -}}
+
+</html>

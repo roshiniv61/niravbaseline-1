@@ -1,0 +1,23 @@
+{
+  "metal": { 
+  title :  "Wood and composite processing",
+  category : "Benz",
+  headline :" ",
+  "short_desc": "Tool and machine tooling technology from BENZ. ",
+  "long_desc": "With BENZ, you will find a wide variety of products for tool and machine tooling technology. ",
+  img :"/images/wood.png",
+  features : [" ", " ", " "],
+  "link":"wood"
+ },
+  "wood": 
+  { 
+  title :  "METAL",
+  category : "Benz",
+  headline :" ",
+  "short_desc": "This is where you will find all of the BENZ products related to metal and composite processing. ",
+  "long_desc": "Metal machining CNC aggregates. Tooling technology for machining and turning centres. Machine tooling technology and systems. ",
+  img :"/images/metal.png",
+  features : [" ", " ", " "],
+  "link":"metal"
+ }
+}

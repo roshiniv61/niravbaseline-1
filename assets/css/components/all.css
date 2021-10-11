@@ -1,0 +1,107 @@
+@import "buttons.css";
+
+body {
+   
+    @apply font-OpenSans text-gray-600
+}
+
+
+h1 h2 h3 h4 h5 h6 a {
+    @apply font-Montserrat text-blue-900 tracking-wider
+}
+
+p {
+        @apply font-OpenSans text-gray-600
+}
+
+a {
+    @apply px-3 py-1 tracking-widest text-xs sm:text-sm focus:outline-none
+    transition duration-500 ease-in-out 
+}
+
+.topNav a {
+    @apply bg-white hover:text-white hover:bg-blue-900 
+}
+
+.mobileNav li {
+    @apply hover:bg-white w-full py-1 text-white hover:text-blue-900
+}
+.mobileNav a{
+    @apply hover:text-blue-900 
+}
+
+
+.box {
+    background-color: lightpink;
+    padding: 20px;
+  }
+  
+.borderTest {
+    @apply border border-red-500
+}
+
+.borderTest1 {
+    @apply border border-yellow-500
+}
+.borderTest2 {
+    @apply border border-blue-500
+}
+
+.borderTest3 {
+    @apply border border-green-500
+}
+.bgTest {
+    @apply  bg-red-500
+}
+
+.bgTest1 {
+    @apply  bg-green-500
+
+}
+
+.bgTest2 {
+    @apply  bg-yellow-500
+
+}
+
+.bgTest3 {
+    @apply  bg-blue-500
+
+}
+
+/* theme colors
+Orange #ea5a25 
+Dark Blue #064b85 */
+
+
+
+.bg-split{
+    background-image: linear-gradient(to left, transparent, transparent 50%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat; /* W3C */
+}
+
+.bg-split2{
+    background-image: linear-gradient(to right, transparent, red 50%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat; /* W3C */
+}
+
+.nvContainer {
+    @apply container lg:container xl:container 2xl:container;
+}
+.nvHeroName {
+    @apply text-xl sm:text-3xl;
+}
+
+.nvHeroHeading {
+    @apply text-3xl sm:text-5xl lg:text-6xl
+}
+
+.nvHeading {
+    @apply text-2xl sm:text-4xl;
+}
+
+.nvSubHeading {
+    @apply text-sm sm:text-lg;
+}

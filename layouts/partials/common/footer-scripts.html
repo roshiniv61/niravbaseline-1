@@ -1,0 +1,19 @@
+<script>
+    gsap.utils.toArray(".slide-up").forEach(section => {
+      gsap.from(section.querySelectorAll("h1, p, div"), {
+        scrollTrigger: section,
+        toggleActions: "restart reset restart reset",
+        autoAlpha: 0,
+        y: 25,
+        duration: 0.5,
+        stagger: 0.25
+      });
+    });
+  </script>
+  <script>
+    var 
+    function navToggle() {
+        var nav = document.getElementById('mobileMenu');
+        nav.classList.toggle('hidden');
+    }
+  </script>

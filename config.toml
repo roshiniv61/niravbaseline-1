@@ -1,0 +1,14 @@
+baseURL = "/"
+relativeURLs = "true"
+canonifyURLs = "true"
+languageCode = "en-us"
+title = " NIRAV TOOLS | DESCRIPTION "
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.75.0"
+
+[build]
+# Used by PurgeCSS
+writeStats = true
